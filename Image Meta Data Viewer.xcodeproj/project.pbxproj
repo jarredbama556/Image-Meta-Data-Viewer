@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB315A991A67167E00B344D5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB315A981A67167E00B344D5 /* ImageIO.framework */; };
 		CBAF29561A66EC0F006F693C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAF29551A66EC0F006F693C /* main.m */; };
 		CBAF29591A66EC0F006F693C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAF29581A66EC0F006F693C /* AppDelegate.m */; };
 		CBAF295C1A66EC0F006F693C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAF295B1A66EC0F006F693C /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		CBAF29611A66EC0F006F693C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAF29601A66EC0F006F693C /* Images.xcassets */; };
 		CBAF29641A66EC0F006F693C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBAF29621A66EC0F006F693C /* LaunchScreen.xib */; };
 		CBAF29701A66EC0F006F693C /* Image_Meta_Data_ViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAF296F1A66EC0F006F693C /* Image_Meta_Data_ViewerTests.m */; };
+		CBAF297A1A66FC8E006F693C /* ExampleExif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBAF29791A66FC8E006F693C /* ExampleExif.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB315A981A67167E00B344D5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		CBAF29501A66EC0F006F693C /* Image Meta Data Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Image Meta Data Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAF29541A66EC0F006F693C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAF29551A66EC0F006F693C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		CBAF29691A66EC0F006F693C /* Image Meta Data ViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Image Meta Data ViewerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAF296E1A66EC0F006F693C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAF296F1A66EC0F006F693C /* Image_Meta_Data_ViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image_Meta_Data_ViewerTests.m; sourceTree = "<group>"; };
+		CBAF29791A66FC8E006F693C /* ExampleExif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ExampleExif.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB315A991A67167E00B344D5 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 		CBAF29471A66EC0E006F693C = {
 			isa = PBXGroup;
 			children = (
+				CB315A981A67167E00B344D5 /* ImageIO.framework */,
 				CBAF29521A66EC0F006F693C /* Image Meta Data Viewer */,
 				CBAF296C1A66EC0F006F693C /* Image Meta Data ViewerTests */,
 				CBAF29511A66EC0F006F693C /* Products */,
@@ -86,6 +92,7 @@
 				CBAF295A1A66EC0F006F693C /* ViewController.h */,
 				CBAF295B1A66EC0F006F693C /* ViewController.m */,
 				CBAF295D1A66EC0F006F693C /* Main.storyboard */,
+				CBAF29791A66FC8E006F693C /* ExampleExif.jpg */,
 				CBAF29601A66EC0F006F693C /* Images.xcassets */,
 				CBAF29621A66EC0F006F693C /* LaunchScreen.xib */,
 				CBAF29531A66EC0F006F693C /* Supporting Files */,
@@ -201,6 +208,7 @@
 			files = (
 				CBAF295F1A66EC0F006F693C /* Main.storyboard in Resources */,
 				CBAF29641A66EC0F006F693C /* LaunchScreen.xib in Resources */,
+				CBAF297A1A66FC8E006F693C /* ExampleExif.jpg in Resources */,
 				CBAF29611A66EC0F006F693C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +422,7 @@
 				CBAF29751A66EC0F006F693C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBAF29761A66EC0F006F693C /* Build configuration list for PBXNativeTarget "Image Meta Data ViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				CBAF29781A66EC0F006F693C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
