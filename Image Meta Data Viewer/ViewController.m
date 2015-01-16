@@ -26,6 +26,8 @@
 - (IBAction)goBtn:(id)sender {
     
     NSURL * imageURL = [NSURL URLWithString:_txtField.text];
+    NSURLRequest *request = [NSURLRequest requestWithURL:imageURL];
+    [NSURLConnection connectionWithRequest:request delegate:self];
     NSData * imageData = [NSData dataWithContentsOfURL:imageURL];
     
     NSString *imagePath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"/downlaodImage.jpg"];
@@ -40,6 +42,7 @@
     tiffDic = [myMetadata objectForKey:(NSString *)kCGImagePropertyTIFFDictionary];
     
     [self.tableView reloadData];
+    
 }
 
 #pragma mark - Table view data source
@@ -67,9 +70,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"itemCell" forIndexPath:indexPath];
     
     UILabel *lbl = (UILabel *)[cell viewWithTag:100];
+    UILabel *lbl2 = (UILabel *)[cell viewWithTag:101];
+
     NSArray *keyVals = [tiffDic allKeys];
+    NSArray *allVals = [tiffDic allValues];
+
     [lbl setText:[keyVals objectAtIndex:indexPath.row]];
-    
+    NSString *value = [NSString stringWithFormat:@"%@", [allVals objectAtIndex:indexPath.row]];
+    [lbl2 setText:value];
+
     return cell;
 }
 
